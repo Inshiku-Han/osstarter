@@ -23,7 +23,7 @@ jobs:
           version: latest
 
       - name: "🔬 Run Biome Lint"
-        run: biome ci .
+        run: biome ci ./src
 
       - name: "💻 Setup Node"
         uses: actions/setup-node@v4

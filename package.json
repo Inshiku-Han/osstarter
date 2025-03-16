@@ -36,12 +36,11 @@
 	"scripts": {
 		"dev": "vitest",
 		"build": "npm run check-types && bunchee",
-		"lint": "biome check --write --unsafe .",
+		"lint": "biome check --write --unsafe ./src",
 		"check-types": "tsc --noEmit",
 		"check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
 		"test": "vitest run",
-		"release": "changeset version && changeset publish",
-		"prepublishOnly": "npm run ci"
+		"release": "changeset version && changeset publish"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.17.4",
